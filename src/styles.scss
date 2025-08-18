@@ -2990,7 +2990,7 @@ section.content.shortcodes.graybg {
 }
 
 #page-header.investment {
-  background: url(assets/img/invest_philosophy.jpg);
+  background: url(assets/images/invest_philosophy.jpg);
   background-size: cover;
   background-position: 0px -140px
 }
@@ -3012,11 +3012,19 @@ section.content.shortcodes.graybg {
 #page-header.mag-team {
   background: url(assets/img/1_home.jpg);
   background-size: cover;
-  background-position: bottom;
+  background-position: 0px -53px;
+}
+#page-header.rist-new {
+  background: url(assets/images/risk_inner.jpg);
+  background-size: cover;
+  background-position: 0px -53px;
 }
 
 #page-header.mag-team:after {
-  background: #000;
+  // background: #000;
+}
+#page-header.rist-new:after {
+  // background: #000;
 }
 
 // #page-header.faq {
