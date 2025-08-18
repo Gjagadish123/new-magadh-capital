@@ -246,7 +246,7 @@ ol li {
 }
 
 hr {
-  border: solid #999;
+  border: solid #00000073;
   border-width: 1px 0 0;
   clear: both;
   height: 0;
@@ -254,7 +254,7 @@ hr {
 }
 
 hr.small {
-  border: solid #313740;
+  border: solid #00000073;
   border-width: 1px 0 0;
   clear: both;
   height: 0;
@@ -2926,7 +2926,7 @@ section.content.shortcodes.graybg {
 }
 
 #page-header:after {
-  background: #055AA8;
+  // background: #055AA8;
   opacity: .5;
   bottom: 0px;
   content: "";
@@ -2952,9 +2952,9 @@ section.content.shortcodes.graybg {
   background-position: 0px -46px;
 }
 
-#page-header.about1:after {
-  background: #000;
-}
+// #page-header.about1:after {
+//   background: #000;
+// }
 
 #page-header.difference {
   background: url(assets/images/difference.jpg);
@@ -7004,7 +7004,7 @@ fieldset[disabled] .btn-danger:hover {
   background-repeat: repeat-x
 }
 
-.panel-info>.panel-heading {
+.panel-#page-header.about1:after>.panel-heading {
   background-image: -webkit-linear-gradient(top, #d9edf7 0, #c4e3f3 100%);
   background-image: -o-linear-gradient(top, #d9edf7 0, #c4e3f3 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#d9edf7), to(#c4e3f3));
