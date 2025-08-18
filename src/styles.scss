@@ -9,6 +9,19 @@
   --bs-body-color: #808080;
 }
 
+
+.btn{
+  background-color: var(--bs-primary);
+  border: 0;
+  padding: 10px;
+  }
+  
+  .btn:hover{
+    border: 1px solid var(--bs-primary);
+    background: #fff;
+    color: var(--bs-primary);
+  }
+  
  
 
 /* Typicons Custom Font */
