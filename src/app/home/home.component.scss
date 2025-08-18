@@ -47,10 +47,11 @@
   .shadow-effect {
     position: relative;
     background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    padding: 28px 28px 24px;
+    border-radius: 6px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.10), 0 15px 12px rgba(0, 0, 0, 0.02);
+    padding: 28px 10px 35px;
     max-width: 980px;
+    border: 1px solid #dfdfdf;
     margin: 0 auto; // center the card
   }
 
@@ -69,3 +70,44 @@
   }
 }
 
+ span.typcn {font-size:54px; line-height:30px; display:table-cell; }
+
+// Section backgrounds (full-width with white left overlay, dark text)
+#backbone,
+#difference,
+#philosophy,
+#risk-management {
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+  background-color: #fff;
+  padding: 70px 0;
+  min-height: 420px;
+}
+
+#backbone {
+  background-image: linear-gradient(to right, #ffffff 0%, #ffffff 40%, rgba(255,255,255,0.85) 55%, rgba(255,255,255,0) 70%), url('/assets/images/home_backbone.jpg');
+}
+
+#difference {
+  background-image: linear-gradient(to right, #ffffff 0%, #ffffff 40%, rgba(255,255,255,0.85) 55%, rgba(255,255,255,0) 70%), url('/assets/images/home_difference.jpg');
+}
+
+#philosophy {
+  background-position: left center;
+  background-image: linear-gradient(to left, #ffffff 0%, #ffffff 40%, rgba(255,255,255,0.85) 55%, rgba(255,255,255,0) 70%), url('/assets/images/invest_philosophy.jpg') !important;
+}
+
+#risk-management {
+  background-position: left center;
+  background-image: linear-gradient(to left, #ffffff 0%, #ffffff 40%, rgba(255,255,255,0.85) 55%, rgba(255,255,255,0) 70%), url('/assets/images/bg_risk.jpg') !important;
+}
+
+// Fallback for class-based hooks if IDs are altered
+.aboutus.investment {
+  background-image: linear-gradient(to right, #ffffff 0%, #ffffff 40%, rgba(255,255,255,0.85) 55%, rgba(255,255,255,0) 70%), url('/assets/images/invest_philosophy.jpg') !important;
+}
+
+.aboutus.risk {
+  background-image: linear-gradient(to right, #ffffff 0%, #ffffff 40%, rgba(255,255,255,0.85) 55%, rgba(255,255,255,0) 70%), url('/assets/images/bg_risk.jpg') !important;
+}

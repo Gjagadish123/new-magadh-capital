@@ -11,17 +11,6 @@
 
  
 
-/* Typicons Custom Font */
-@font-face {
-  font-family: 'Typicons';
-  src: url('assets/fonts/typicons.eot');
-  src: url('assets/fonts/typicons.eot?#iefix') format('embedded-opentype'),
-       url('assets/fonts/typicons.woff') format('woff'),
-       url('assets/fonts/typicons.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 body, html {
   font-family: Arial, Helvetica, sans-serif;
   color: var(--bs-body-color);
@@ -36,3 +25,17 @@ h5 { font-size: 17px; }
 h6 { font-size: 14px; }
 
 /* You can add global styles to this file, and also import other style files */
+
+
+.btn{
+background-color: var(--bs-primary);
+border: 0;
+padding: 10px;
+}
+
+.btn:hover{
+  border: 1px solid var(--bs-primary);
+  background: #fff;
+  color: var(--bs-primary);
+}
+
