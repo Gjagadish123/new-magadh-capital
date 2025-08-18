@@ -1,10 +1,23 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
+declare const bootstrap: any;
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent {
-
+export class HomeComponent implements AfterViewInit {
+  ngAfterViewInit(): void {
+    const element = document.getElementById('homeCarousel');
+    if (element) {
+      const instance = bootstrap.Carousel.getOrCreateInstance(element, {
+        interval: 6000,
+        pause: false,
+        ride: 'carousel',
+        touch: true,
+        wrap: true
+      });
+      instance.cycle();
+    }
+  }
 }
