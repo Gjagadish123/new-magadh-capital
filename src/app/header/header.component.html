@@ -1,82 +1,6 @@
-<!-- <div id="hw-hero">
-  <div class="header header1">
-    <div class="header-navigation">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="logonav">
-            <div class="row no-gutter align-items-center">
-              <div class="col-sm-1">
-                <div class="logo">
-                  <a routerLink="/">
-                    <img src="assets/images/magadh-capital-logo.png" alt="Magadh Capital" />
-                  </a>
-                </div>
-              </div>
-              <div class="col-sm-11">
-                <nav id="desktop-menu">
-                  <ul class="sf-menu clickTo nav" id="navigation">
-                    <li class="nav-item">
-                      <a class="nav-link" routerLink="/">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" routerLink="/backbone">THE BACKBONE</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" routerLink="/difference">MAGADH DIFFERENCE</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="investmentFrameworkDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        INVESTMENT FRAMEWORK
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="investmentFrameworkDropdown">
-                        <li><a class="dropdown-item" routerLink="/philosophy">INVESTMENT PHILOSOPHY</a></li>
-                        <li><a class="dropdown-item" routerLink="/investment-process">INVESTMENT PROCESS</a></li>
-                        <li><a class="dropdown-item" routerLink="/inspiration">OUR INSPIRATION</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" routerLink="/risk-management">RISK MANAGEMENT</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" routerLink="/team">OUR TEAM</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        RESOURCES
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
-                        <li><a class="dropdown-item" routerLink="/resources/blogs">OUR BLOGS</a></li>
-                        <li><a class="dropdown-item" routerLink="/resources/media">MEDIA</a></li>
-                        <li><a class="dropdown-item" routerLink="/resources/newsletters">NEWSLETTERS</a></li>
-                        <li><a class="dropdown-item" routerLink="/resources/towards-awareness">TOWARDS AWARENESS</a></li>
-                        <li><a class="dropdown-item" routerLink="/resources/faqs">FAQS</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="investorAssistanceDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        INVESTOR ASSISTANCE
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="investorAssistanceDropdown">
-                        <li><a class="dropdown-item" routerLink="/login-in">LOGIN IN</a></li>
-                        <li><a class="dropdown-item" routerLink="/how-to-invest-with-us">HOW TO INVEST WITH US</a></li>
-                        <li><a class="dropdown-item" routerLink="/downloads">DOWNLOADS</a></li>
-                        <li><a class="dropdown-item" routerLink="/grievances">GRIEVANCES</a></li>
-                        <li><a class="dropdown-item" routerLink="/investor-faq">FAQ</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" routerLink="/contact-us">CONTACT</a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-   </div>
-</div> -->
+
+
+
  <div id="hw-hero">
       <div class="header header1">
         <div  [ngClass]="{'f-nav fadeindown': isScrolled}" class="header-navigation">
@@ -92,52 +16,40 @@
                   <div class="col-sm-11">
                     <nav id="desktop-menu">
                       <ul class="sf-menu" id="navigation">
-                        <li class="current"><a href="index">Home</a></li>
-                        <li><a routerLink="backbone">The Backbone</a></li>
-                        <li><a routerLink="difference">Magadh Difference</a></li>
-                        <li><a routerLink="philosophy">Investment Framework</a>
+                        <li routerLinkActive="current" [routerLinkActiveOptions]="{ exact: true }"><a routerLink="/index">Home</a></li>
+                        <li routerLinkActive="current" [routerLinkActiveOptions]="{ exact: true }"><a routerLink="/backbone">The Backbone</a></li>
+                        <li routerLinkActive="current" [routerLinkActiveOptions]="{ exact: true }"><a routerLink="/difference">Magadh Difference</a></li>
+                        <li routerLinkActive="current" [routerLinkActiveOptions]="{ exact: true }"><a routerLink="/philosophy">Investment Framework</a>
                           <ul>
-                            <li><a routerLink="philosophy">Investment
+                            <li><a routerLink="/philosophy">Investment
                                 Philosophy &amp; Style</a></li>
-                            <li><a routerLink="philosophy/process">Investment
+                            <li><a routerLink="/philosophy">Investment
                                 Process</a></li>
-                            <li><a routerLink="philosophy/inspiration">Our
+                            <li><a routerLink="/philosophy">Our
                                 Inspiration</a></li>
                           </ul>
                         </li>
-                        <li><a routerLink="risk-management">Risk
+                        <li  routerLinkActive="current" [routerLinkActiveOptions]="{ exact: true }"><a routerLink="/risk-management">Risk
                             Management</a></li>
-                        <li><a routerLink="team.html">Our Team</a></li>
-                        <li><a routerLink="resourses">Resources</a>
+                        <li routerLinkActive="current" [routerLinkActiveOptions]="{ exact: true }"><a routerLink="/team">Our Team</a></li>
+                        <li routerLinkActive="current" [routerLinkActiveOptions]="{ exact: true }"><a routerLink="/resourses">RESOURSES</a>
                           <ul>
-                            <li><a routerLink="resourses/our-blogs">Our
-                                Blogs</a></li>
-                            <li><a routerLink="resourses/media">Media</a></li>
-                            <li><a
-                                routerLink="resourses/Investorletters">Investor
-                                Letters</a></li>
-                            <li><a
-                                routerLink="resourses/towards_awareness">Towards
-                                Awareness</a></li>
-                            <!-- <li><a routerLink="resourses.html#faqs" target="_blank">Faqs</a></li> -->
+                            <li><a [routerLink]="['/resourses']" fragment="our_blogs">Our Blogs</a></li>
+                            <li><a [routerLink]="['/resourses']" fragment="Media">Media</a></li>
+                            <li><a [routerLink]="['/resourses']" fragment="Investor_Letters">Investor Letters</a></li>
+                            <li><a [routerLink]="['/resourses']" fragment="towards_awareness">Towards Awareness</a></li>
                           </ul>
                         </li>
-                        <li><a routerLink="assistance.html">Investor Assistance</a>
+                        <li routerLinkActive="current" [routerLinkActiveOptions]="{ exact: true }"><a routerLink="assistance">Investor Assistance</a>
                           <ul>
-                            <li><a
-                                routerLink="https://faconnect.kotak.com/"
-                                target="_blank" rel="noopener noreferrer">Log
-                                in</a></li>
-                            <li><a routerLink="assistance/invest">How to invest
-                                with us</a></li>
-                            <li><a
-                                routerLink="assistance/download">Downloads</a></li>
-                            <li><a
-                                routerLink="assistance/complaints">Grievances</a></li>
-                            <li><a routerLink="assistance/FAQ">FAQ</a></li>
+                            <li><a (click)="loginPage()">Login</a></li>
+                            <li><a [routerLink]="['/assistance']" fragment="invest">How to invest with us</a></li>
+                            <li><a [routerLink]="['/assistance']" fragment="download">Downloads</a></li>
+                            <li><a [routerLink]="['/assistance']" fragment="complaints">Grievances</a></li>
+                            <li><a [routerLink]="['/assistance']" fragment="FAQ">FAQ</a></li>
                           </ul>
                         </li>
-                        <li><a routerLink="contact-us">Contact</a></li>
+                        <li routerLinkActive="current" [routerLinkActiveOptions]="{ exact: true }"><a routerLink="contact-us">Contact</a></li>
                       </ul>
                     </nav>
                   </div>

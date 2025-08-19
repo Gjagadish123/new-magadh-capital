@@ -1,1 +1,104 @@
-<p>resources works!</p>
+<div id="hw-hero">
+    <div id="page-header" class="contact">
+        <div class="title-breadcrumbs">
+            <h1>RESOURSES</h1>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12 normaltabs tabs-top-horizontal my-3">
+        <ul
+            class="nav nav-tabs"
+            id="assistances"
+            role="tablist"
+            style="position: relative; z-index: 2">
+            <li
+                class="nav-item"
+                role="presentation"
+                [class.active]="activeTab === 'our_blogs'">
+                <a
+                    class="nav-link"
+                    id="tab-our_blogs-tab"
+                    data-bs-toggle="tab"
+                    [routerLink]="[]"
+                    href="#our_blogs"
+                    fragment="our_blogs"
+                    role="tab"
+                    aria-controls="tab-our_blogs"
+                    aria-selected="false">OUR BLOGS</a>
+            </li>
+            <li
+                class="nav-item"
+                role="presentation"
+                [class.active]="activeTab === 'Media'">
+                <a
+                    class="nav-link"
+                    id="tab-Media"
+                    [routerLink]="[]"
+                    data-bs-toggle="tab"
+                    href="#Media"
+                    role="tab"
+                    aria-controls="tab-Media"
+                    aria-selected="false"
+                    fragment="Media">Media</a>
+            </li>
+            <li
+                class="nav-item"
+                role="presentation"
+                [class.active]="activeTab === 'Investor_Letters'">
+                <a
+                    class="nav-link"
+                    id="tab-Investor_Letters"
+                    [routerLink]="[]"
+                    data-bs-toggle="tab"
+                    href="#Investor_Letters"
+                    role="tab"
+                    aria-controls="tab-Investor_Letters"
+                    aria-selected="false"
+                    fragment="Investor_Letters">Investor Letters</a>
+            </li>
+            <li
+                class="nav-item"
+                role="presentation"
+                [class.active]="activeTab === 'towards_awareness'">
+                <a
+                    class="nav-link"
+                    id="tab-towards_awareness"
+                    [routerLink]="[]"
+                    data-bs-toggle="tab"
+                    href="#towards_awareness"
+                    role="tab"
+                    aria-controls="tab-towards_awareness"
+                    aria-selected="false"
+                    fragment="towards_awareness">Towards Awareness</a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+                 <app-blogs
+                    *ngIf="activeTab === 'our_blogs'"
+                    [class.active]="activeTab === 'our_blogs'"
+                    [class.show]="activeTab === 'our_blogs'"></app-blogs>
+ 
+            <app-media
+                *ngIf="activeTab === 'Media'"
+                [class.active]="activeTab === 'Media'"
+                [class.show]="activeTab === 'Media'"></app-media>
+                
+<app-newsletters  *ngIf="activeTab === 'Investor_Letters'"
+                    [class.active]="activeTab === 'Investor_Letters'"
+                    [class.show]="activeTab === 'Investor_Letters'">
+
+
+</app-newsletters>
+
+
+                <app-towards-awareness
+                    *ngIf="activeTab === 'towards_awareness'"
+                    [class.active]="activeTab === 'towards_awareness'"
+                    [class.show]="activeTab === 'towards_awareness'"></app-towards-awareness>
+
+            </div>
+            </div>
+            </div>
+            

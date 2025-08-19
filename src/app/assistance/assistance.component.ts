@@ -2,24 +2,26 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-resources',
-  templateUrl: './resources.component.html',
-  styleUrls: ['./resources.component.scss']
+  selector: 'app-assistance',
+  templateUrl: './assistance.component.html',
+  styleUrls: ['./assistance.component.scss']
 })
-export class ResourcesComponent {
-  activeTab: string = 'our_blogs'; // default
+export class AssistanceComponent {
+
+  activeTab: string = 'FAQ'; // default
 
   constructor(private route: ActivatedRoute) { }
   ngOnInit() {
     this.route.fragment.subscribe((fragment) => {
-      if (fragment === 'our_blogs' || fragment === 'towards_awareness' || fragment === 'Media' || fragment === 'Investor_Letters') {
+      if (fragment === 'invest' || fragment === 'complaints' || fragment === 'FAQ' || fragment === 'login' || fragment === 'download') {
         this.activeTab = fragment;
       } else {
-        this.activeTab = 'our_blogs';
+        this.activeTab = 'invest';
       }
     });
     console.log('====================================');
     console.log(this.activeTab);
     console.log('====================================');
   }
+
 }
