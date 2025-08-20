@@ -1,4 +1,4 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { AfterViewInit, Component, HostListener } from '@angular/core';
 declare const bootstrap: any;
 
 @Component({
@@ -19,5 +19,17 @@ export class HomeComponent implements AfterViewInit {
       });
       instance.cycle();
     }
+  }
+
+  isScrollTopVisible = false;
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.isScrollTopVisible = window.pageYOffset > 300;
+  }
+
+  scrollToTop(event: Event): void {
+    event.preventDefault(); // prevents anchor jump
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }

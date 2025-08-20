@@ -15,17 +15,26 @@ export class HeaderComponent {
   constructor(@Inject(DOCUMENT) private document: Document, public router: Router) { }
 
   @HostListener('window:scroll', [])
-
-  isActive(path: string): boolean {
-    return this.router.url === path;
-  }
-
   onWindowScroll(): void {
     const scrollTop = window.pageYOffset ||
       this.document.documentElement.scrollTop ||
       this.document.body.scrollTop || 0;
     this.isScrolled = scrollTop > 200;
   }
+
+  isActive(path: string): boolean {
+    return this.router.url === path;
+  }
+
+  // onWindowScroll(): void {
+  //   const scrollTop = window.pageYOffset ||
+  //     this.document.documentElement.scrollTop ||
+  //     this.document.body.scrollTop || 0;
+  //   this.isScrolled = scrollTop > 200;
+  //   console.log('====================================');
+  //   console.log(this.isScrolled);
+  //   console.log('====================================');
+  // }
 
   loginPage() {
     window.open('https://faconnect.kotak.com/', '_blank', 'noopener,noreferrer');

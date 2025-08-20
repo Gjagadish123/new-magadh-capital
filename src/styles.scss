@@ -464,6 +464,23 @@ select:focus {
 #index-slider {
   display: none;
 }
+// #homeCarousel .carousel-item:after {
+//   background: #000;
+//   opacity: .6;
+//   bottom: 0px;
+//   content: "";
+//   left: 0;
+//   position: absolute;
+//   right: 0;
+//   top: 0;
+// }
+
+// #homeCarousel .carousel-item h2 {
+//   color: #fff;
+//   letter-spacing: 0;
+//   font-size: 47px;
+//   margin-bottom: 35px;
+// }
 
 #index-slider .sp-slide:after {
   background: #000;
@@ -2958,9 +2975,9 @@ section.content.shortcodes.graybg {
   background-position: 0px -46px;
 }
 
-// #page-header.about1:after {
-//   background: #000;
-// }
+#page-header.about1:after {
+  background: #000;
+}
 
 #page-header.difference {
   background: url(assets/images/difference.jpg);

@@ -52,7 +52,7 @@
     border-radius: 6px;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.10), 0 15px 12px rgba(0, 0, 0, 0.02);
     padding: 28px 10px 35px;
-    max-width: 980px;
+    // max-width: 980px;
     border: 1px solid #dfdfdf;
     margin: 0 auto; // center the card
   }
@@ -113,3 +113,17 @@
 .aboutus.risk {
   background-image: url('/assets/images/bg_risk.jpg') !important;
 }
+// .scroll-top {
+//   position: fixed;
+//   bottom: 40px;
+//   right: 30px;
+//   opacity: 0;
+//   visibility: hidden;
+//   transition: opacity 0.3s ease-in-out;
+//   z-index: 999;
+// }
+
+// .scroll-top.visible {
+//   opacity: 1;
+//   visibility: visible;
+// }
