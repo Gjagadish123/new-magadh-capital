@@ -25,7 +25,7 @@ import { TeamComponent } from './team/team.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'index', component: HomeComponent },
+  // { path: 'index', component: HomeComponent },
   { path: 'contact-us', component: ContactUsComponent },
   { path: 'team', component: TeamComponent },
   { path: 'backbone', component: BackboneComponent },
