@@ -7,6 +7,7 @@ import { NewslettersComponent } from './newsletters/newsletters.component';
 import { ResourcesRoutingModule } from './resources-routing.module';
 import { ResourcesComponent } from './resources.component';
 import { TowardsAwarenessComponent } from './towards-awareness/towards-awareness.component';
+import { UPIComponent } from './UPI/UPI.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { TowardsAwarenessComponent } from './towards-awareness/towards-awareness
     MediaComponent,
     NewslettersComponent,
     TowardsAwarenessComponent,
+    UPIComponent
   ],
   imports: [
     CommonModule,

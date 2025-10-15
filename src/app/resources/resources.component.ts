@@ -12,7 +12,7 @@ export class ResourcesComponent {
   constructor(private route: ActivatedRoute) { }
   ngOnInit() {
     this.route.fragment.subscribe((fragment) => {
-      if (fragment === 'our_blogs' || fragment === 'towards_awareness' || fragment === 'Media' || fragment === 'Investor_Letters') {
+      if (fragment === 'our_blogs' || fragment === 'towards_awareness' || fragment === 'Media' || fragment === 'Investor_Letters' || fragment === 'UPI') {
         this.activeTab = fragment;
       } else {
         this.activeTab = 'our_blogs';

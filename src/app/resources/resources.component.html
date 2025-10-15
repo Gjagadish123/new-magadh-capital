@@ -72,6 +72,21 @@
                     aria-selected="false"
                     fragment="towards_awareness">Towards Awareness</a>
             </li>
+                <li
+                class="nav-item"
+                role="presentation"
+                [class.active]="activeTab === 'UPI'">
+                <a
+                    class="nav-link"
+                    id="tab-UPI"
+                    [routerLink]="[]"
+                    data-bs-toggle="tab"
+                    href="#UPI"
+                    role="tab"
+                    aria-controls="tab-UPI"
+                    aria-selected="false"
+                    fragment="UPI">UPI Payment</a>
+            </li>
         </ul>
 
         <div class="tab-content">
@@ -97,6 +112,10 @@
                     *ngIf="activeTab === 'towards_awareness'"
                     [class.active]="activeTab === 'towards_awareness'"
                     [class.show]="activeTab === 'towards_awareness'"></app-towards-awareness>
+                <app-upi
+                    *ngIf="activeTab === 'UPI'"
+                    [class.active]="activeTab === 'UPI'"
+                    [class.show]="activeTab === 'UPI'"></app-upi>
 
             </div>
             </div>
