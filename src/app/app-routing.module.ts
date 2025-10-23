@@ -40,7 +40,7 @@ const routes: Routes = [
   { path: 'inspiration', component: InspirationComponent },
   { path: 'philosophy', component: PhilosophyComponent },
   { path: 'pmsfaq', component: PmsfaqComponent },
-  { path: 'resourses', component: ResourcesComponent },
+  { path: 'resources', component: ResourcesComponent },
   { path: 'risk-management', component: RiskManagementComponent },
   { path: 'investment-process', component: InvestmentProcessComponent },
   { path: 'how-to-invest-with-us', component: HowToInvestWithUsComponent },
