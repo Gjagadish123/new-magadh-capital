@@ -18,8 +18,5 @@ export class ResourcesComponent {
         this.activeTab = 'our_blogs';
       }
     });
-    console.log('====================================');
-    console.log(this.activeTab);
-    console.log('====================================');
   }
 }

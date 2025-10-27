@@ -53,9 +53,16 @@
 1 = Global
 ======================== */
 
+@media (min-width: 576px) {
+  .modal-dialog {
+    // max-width: var(--bs-modal-width);
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 
-
-/*changes added by dhananjayrv | 91 8369004524 */
+/*changes added by dhananjayrv */
 
 
 .image-autoalign {

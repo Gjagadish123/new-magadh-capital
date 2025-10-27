@@ -19,9 +19,6 @@ export class AssistanceComponent {
         this.activeTab = 'invest';
       }
     });
-    console.log('====================================');
-    console.log(this.activeTab);
-    console.log('====================================');
   }
 
 }

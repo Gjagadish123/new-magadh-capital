@@ -31,9 +31,6 @@ export class HeaderComponent {
   //     this.document.documentElement.scrollTop ||
   //     this.document.body.scrollTop || 0;
   //   this.isScrolled = scrollTop > 200;
-  //   console.log('====================================');
-  //   console.log(this.isScrolled);
-  //   console.log('====================================');
   // }
 
   loginPage() {
