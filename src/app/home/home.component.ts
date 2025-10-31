@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, HostListener, OnDestroy, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { Modal } from 'bootstrap';
 declare const bootstrap: any;
 
@@ -7,7 +7,7 @@ declare const bootstrap: any;
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements AfterViewInit , OnDestroy{
+export class HomeComponent implements AfterViewInit {
 
   @ViewChild('exampleModal') modalElement!: ElementRef;
   private modal!: Modal;
@@ -23,13 +23,13 @@ export class HomeComponent implements AfterViewInit , OnDestroy{
       });
       instance.cycle();
     }    
-    if (sessionStorage.getItem('hideModal') !== 'true') {
-    this.modal = new Modal(this.modalElement.nativeElement, {
-      backdrop: 'static', // optional
-      keyboard: true
-    });
-    this.modal.show();
-    }
+    // if (sessionStorage.getItem('hideModal') !== 'true') {
+    // this.modal = new Modal(this.modalElement.nativeElement, {
+    //   backdrop: 'static', // optional
+    //   keyboard: true
+    // });
+    // this.modal.show();
+    // }
   }
 
   isScrollTopVisible = false;
@@ -43,11 +43,11 @@ export class HomeComponent implements AfterViewInit , OnDestroy{
     event.preventDefault(); // prevents anchor jump
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
-  closeModal() {
-    this.modal.hide();
-    sessionStorage.setItem('hideModal', 'true');
-  }
-  ngOnDestroy(): void {
-    this.closeModal();
-  }
+  // closeModal() {
+  //   this.modal.hide();
+  //   sessionStorage.setItem('hideModal', 'true');
+  // }
+  // ngOnDestroy(): void {
+  //   this.closeModal();
+  // }
 }

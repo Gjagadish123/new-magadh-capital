@@ -34,6 +34,6 @@ export class HeaderComponent {
   // }
 
   loginPage() {
-    window.open('https://faconnect.kotak.com/', '_blank', 'noopener,noreferrer');
+    window.open('https://faconnect.kotak.bank.in/', '_blank', 'noopener,noreferrer');
   }
 }

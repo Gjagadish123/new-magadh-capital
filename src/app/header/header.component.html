@@ -43,7 +43,7 @@
                         </li>
                         <li routerLinkActive="current" [routerLinkActiveOptions]="{ exact: true }"><a routerLink="assistance">Investor Assistance</a>
                           <ul>
-                            <li><a (click)="loginPage()">Login</a></li>
+                            <li><a (click)="loginPage()" style="cursor: pointer;">Login</a></li>
                             <li><a [routerLink]="['/assistance']" fragment="invest">How to invest with us</a></li>
                             <li><a [routerLink]="['/assistance']" fragment="download">Downloads</a></li>
                             <li><a [routerLink]="['/assistance']" fragment="complaints">Grievances</a></li>
